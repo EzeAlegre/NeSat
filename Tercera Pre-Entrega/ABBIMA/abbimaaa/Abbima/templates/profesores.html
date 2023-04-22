@@ -1,0 +1,48 @@
+!<!DOCTYPE html>
+    <h1>Bienvenidos a PROFESORES!</h1>
+<h1>Hola</h1>
+<h2>{{ mensajes }}</h2>
+<form action="" method="post">
+    <input value="agregar" type="submit" >         
+</form>
+
+<table>
+    <thead>
+        <tr>
+            <th>Email</th>
+
+            <th>Nombre</th>
+
+            <th>Profesion</th>
+
+            <th>Apellido</th>
+            
+            <th>Opciones</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            
+            <td>
+                {{ profesor.Apellido}}
+            </td>
+
+            <td>
+                {{ profesor.Nombre}}
+            </td>
+
+            <td>
+                {{ profesor.Profesion}}
+            </td>
+
+            <td>
+                {{ profesor.Email}}
+            </td>
+            
+            <td>
+                <a class="btn btn-peligro" >eliminar </a>
+                <a class="btn btn-aprobado" >editar</a>
+            </td>
+        </tr>
+    </tbody>
+</table>
